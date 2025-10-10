@@ -1,3 +1,5 @@
+#nestedifelse
+
 money = int(input("How much monet you have?"))
 if(money):
     
@@ -7,4 +9,6 @@ if(money):
         print("let's have Wadapav or Patise")
 
 else:
-    print("Go to the garden")            m
+    print("Go to the garden") 
+
+
