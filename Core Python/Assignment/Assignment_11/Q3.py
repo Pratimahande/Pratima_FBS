@@ -1,17 +1,11 @@
-def sort_by_sec_ele(li):
-    size = len(li)
-    for i in range(1,size):
-        for j in range(0,size - 1 ):
-
-            if(li[j][1] > li[j + 1][1]):
-                temp=li[j]
-                li[j]=li[j+1]
-                li[j+1]=temp
+def sort_by_second_element(li):
+    li.sort(key=lambda x: x[1])
     return li
 
-list=[[70,4],[30,2],[90,7],[40,6]]
+list = [[20,5], [60, 1], [30, 4], [10, 2]]
 
-res = sort_by_sec_ele(list)
+print("Original List:", list)
 
-print("original list : ",list)
-print("sorted list : ",res)
+sorted_list = sort_by_second_element(list)
+
+print("Sorted List:", sorted_list)
