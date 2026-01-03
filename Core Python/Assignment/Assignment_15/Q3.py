@@ -1,22 +1,27 @@
 class Shirt:
-    # Constructor (supports parameterized and parameterless forms)
-    def __init__(self, sid=None, sname=None, stype=None, price=None, size=None):
-        self.sid = sid
-        self.sname = sname
-        self.stype = stype     
-        self.price = price
-        self.size = size       
-        print("Shirt object created.")
+    def __init__(self,s_id=101,s_name='Khurta',type ='Traditional',price=1000,size='S'):
 
-
-
-  # Destructor
+        self.s_id =s_id
+        self.s_name=s_name
+        self.type=type
+        self.price=price
+        self.size=size
+    
     def __del__(self):
-        print("Shirt object destroyed.")
-
+        print("DESTRUCTOR CALLED ..........")
+    
     def showShirt(self):
-        print("Shirt ID:", self.sid)
-        print("Shirt Name:", self.sname)
-        print("Type:", self.stype)
-        print("Price:", self.price)
-        print("Size:", self.size)
+        
+        print("SHIRT ID : ",self.s_id)
+        print("SHIRT NAME : ",self.s_name)
+        print("SHIRT TYPE : ",self.type)
+        print("SHIRT PRICE : ",self.price)
+        print("SHIRT SIZE : ",self.size)
+
+print(" PARAMETERIZED .....")
+s1 = Shirt(102,'suit','formal',3000,'XL')
+s1.showShirt()
+
+print("parameterless...")
+s2 = Shirt()
+s2.showShirt()
