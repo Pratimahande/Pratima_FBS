@@ -1,5 +1,5 @@
 class Shirt:
-    def __init__(self,s_id=101,s_name='Khurta',type ='Traditional',price=1000,size='S'):
+    def __init__(self,s_id=101,s_name='Khurta',type ='Traditional',price=1000,size='large'):
 
         self.s_id =s_id
         self.s_name=s_name
@@ -19,7 +19,7 @@ class Shirt:
         print("SHIRT SIZE : ",self.size)
 
 print(" PARAMETERIZED .....")
-s1 = Shirt(102,'suit','formal',3000,'XL')
+s1 = Shirt(102,'suit','formal',3000,'Small')
 s1.showShirt()
 
 print("parameterless...")
